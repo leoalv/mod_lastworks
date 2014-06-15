@@ -1,10 +1,10 @@
 <?php
 /**
- * @autor       Valentín García
+ * @autor       ValentÃ­n GarcÃ­a
  * @website     www.htmgarcia.com
  * @package		Joomla.Site
  * @subpackage	mod_lastworks
- * @copyright	Copyright (C) 2013 Valentín García. All rights reserved.
+ * @copyright	Copyright (C) 2014 ValentÃ­n GarcÃ­a. All rights reserved.
  * @license		GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -17,19 +17,20 @@ include_once JPATH_ROOT . DIRECTORY_SEPARATOR . 'components' . DIRECTORY_SEPARAT
 include_once dirname(__FILE__).'/helper.php';
 
 //vars
-$moduleclass_sfx 	= htmlspecialchars($params->get('moduleclass_sfx'));//suffix
-$id_ 				= $module->id; //Moduleid
-$categories 		= $params->get('vgcategories');
-$filter 			= $params->get('vgfilter', 'any');
-$orderingtype 		= $params->get('vgorderingtype', 'created');
-$ordering 			= $params->get('vgordering', 'ASC' );
-$limit 				= $params->get('vgnumarticles', 6 );
-$layout 			= $params->get('vglayout', 'default');
+$moduleclass_sfx    = htmlspecialchars($params->get('moduleclass_sfx'));//suffix
+$id_                = $module->id; //Moduleid
+$categories         = $params->get('vgcategories');
+$filter             = $params->get('vgfilter', 'any');
+$orderingtype       = $params->get('vgorderingtype', 'created');
+$ordering           = $params->get('vgordering', 'ASC' );
+$limit              = $params->get('vgnumarticles', 6 );
+$layout             = $params->get('vglayout', 'default');
+$jqueryload         = $params->get('vgjquery', 0);
 
 //data
-$articles 			= modLastWorksHelper::getArticlesLW( $categories, $filter, $orderingtype, $ordering, $limit );
+$articles           = modLastWorksHelper::getArticlesLW( $categories, $filter, $orderingtype, $ordering, $limit );
 if($categories){
-	$categories 	= modLastWorksHelper::getCategoriesLW( $categories );
+    $categories     = modLastWorksHelper::getCategoriesLW( $categories );
 }
 
 require JModuleHelper::getLayoutPath( 'mod_lastworks', $layout );
