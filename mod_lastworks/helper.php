@@ -20,6 +20,9 @@ class modLastWorksHelper
         $db = JFactory::getDBO();
         $query = 'SELECT * FROM #__content';
         $query .= ' WHERE state = 1';
+
+        // only article between publishing dates @since 2.2.10
+        $query .= ' AND ((now() BETWEEN publish_up AND publish_down) OR (now() >= publish_up AND publish_down LIKE "0000-00-00 00:00:00"))';
         
         //categories - @since 1.0.4 (only the if sentence)
         if( $categories ){
