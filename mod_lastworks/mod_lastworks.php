@@ -29,5 +29,6 @@ $jqueryload         = $params->get('vgjquery', 0);
 
 //data
 $articles           = modLastWorksHelper::getArticlesLW( $categories, $filter, $orderingtype, $ordering, $limit );
+$categories         = modLastWorksHelper::getCategoriesLW( $categories );
 
 require JModuleHelper::getLayoutPath( 'mod_lastworks', $layout );
