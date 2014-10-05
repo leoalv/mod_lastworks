@@ -22,8 +22,9 @@ class modLastWorksHelper
         $query .= ' WHERE state = 1';
 
         // only article between publishing dates @since 2.2.10
-        $query .= ' AND ((now() BETWEEN publish_up AND publish_down) OR (now() >= publish_up AND publish_down LIKE "0000-00-00 00:00:00"))';
-        
+        $query .= ' AND (publish_up = "0000-00-00 00:00:00" OR publish_up <= "' . JFactory::getDate() . '")';
+        $query .= ' AND (publish_down = "0000-00-00 00:00:00" OR publish_down >= "' . JFactory::getDate() . '")';
+
         //categories - @since 1.0.4 (only the if sentence)
         if( $categories ){
             $query .= ' AND catid IN(' . join( ',', $categories ) . ')';
