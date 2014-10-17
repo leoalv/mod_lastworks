@@ -7,8 +7,15 @@
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <authorEmail>htmgarcia@gmail.com</authorEmail>
     <authorUrl>www.htmgarcia.com</authorUrl>
-    <version>2.1.10</version>
-    <description>MOD_LASTWORKS_DESCRIPTION</description>
+    <version>2.2.10</version>
+    <description>
+        <![CDATA[
+        <img src='../modules/mod_lastworks/assets/icon.png' style='float:left; margin-right:10px;width:100px;height:100px;' />
+        Last Works. Show your articles as you wants. <br /><br />
+        Add your own Alternative Layouts inside: <em>templates/yourtemplate/html/mod_lastworks/</em> and choose it editing the module in <b>Alternative Layout</b> param.  <br />
+        Info and support: <a href="http://htmgarcia.com" target='_blank'>www.htmgarcia.com</a>
+        ]]>
+    </description>
     <files>
         <filename module="mod_lastworks">mod_lastworks.php</filename>
         <filename module="mod_lastworks">index.html</filename>

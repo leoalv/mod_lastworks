@@ -52,7 +52,7 @@ echo '<div class="lastworks-container lastworks-four-columns">';
                     echo $article->introtext;
                 
                     // Read more link
-                    echo '<p>' . JHtml::_('link', ContentHelperRoute::getArticleRoute($article->id), JText::_('MOD_LASTWORKS_READMORE', $article->catid), 'class="btn"') . '</p>'; 
+                    echo '<p>' . JHtml::_('link', ContentHelperRoute::getArticleRoute($article->id,  $article->catid), JText::_('MOD_LASTWORKS_READMORE', $article->catid), 'class="btn"') . '</p>';
             
                 echo '</div>';
                 
