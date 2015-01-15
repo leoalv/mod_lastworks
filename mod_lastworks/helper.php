@@ -68,7 +68,7 @@ class modLastWorksHelper
     //Get categories @since 1.0.0
     public static function getCategoriesLW( $categories ){
         
-        $db =& JFactory::getDBO();
+        $db & JFactory::getDBO();
         $query = 'SELECT * FROM #__categories';
         $query .= ' WHERE published = 1';
         
