@@ -80,6 +80,9 @@
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	-o-border-radius:3px;
+	max-width: 100%;
+        height: auto;
+        width: auto;
 }
 
 .lastworks_isotope .element-item > * {
