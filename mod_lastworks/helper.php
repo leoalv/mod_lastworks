@@ -135,7 +135,7 @@ class modLastWorksHelper
     //Get category description @since 1.0.5
     public static function getCategoryDescriptionLW( $id ){
         
-        $db =& JFactory::getDBO();
+        $db = JFactory::getDBO();
         $query = 'SELECT description FROM #__categories';
         $query .= ' WHERE published = 1';
         
