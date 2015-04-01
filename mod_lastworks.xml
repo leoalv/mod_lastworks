@@ -21,6 +21,7 @@
         <filename module="mod_lastworks">index.html</filename>
         <filename module="mod_lastworks">helper.php</filename>
         <filename module="mod_lastworks">LICENSE.txt</filename>
+        <filename module="mod_lastworks">README.md</filename>
         <folder module="mod_lastworks">assets</folder>
         <folder module="mod_lastworks">tmpl</folder>
     </files>
