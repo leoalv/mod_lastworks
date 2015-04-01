@@ -11,18 +11,20 @@
 // no direct access
 defined('_JEXEC') or die;
 
-//CSS and JS
-$document   = JFactory::getDocument();
-$document->addStylesheet(JURI::base() . 'modules/mod_lastworks/assets/css/isotope.css');
-if( $jqueryload ){
-    $document->addScript(JURI::base() . 'media/jui/js/jquery.min.js');
-    $document->addScript(JURI::base() . 'media/jui/js/jquery-noconflict.js');
-}
-$document->addScript(JURI::base() . 'modules/mod_lastworks/assets/js/isotope.pkgd.min.js');
-$document->addScript(JURI::base() . 'modules/mod_lastworks/assets/js/isotope.js');
+// Load CSS
+JHtml::_('stylesheet', 'modules/mod_lastworks/assets/css/isotope.css');
 
-echo '<script></script>
-<div class="lastworks_isotope ' . $moduleclass_sfx . '">';
+// Load jQuery if enabled
+if( $jqueryload ){
+    JHtml::_('script', 'media/jui/js/jquery.min.js');
+    JHtml::_('script', 'media/jui/js/jquery-noconflict.js');
+}
+
+// Load Isotope
+JHtml::_('script', 'modules/mod_lastworks/assets/js/isotope.pkgd.min.js');
+JHtml::_('script', 'modules/mod_lastworks/assets/js/isotope.js');
+
+echo '<div class="lastworks_isotope ' . $moduleclass_sfx . '">';
     if(count($articles)) { //<-- A1.
         
         echo '<div id="filters" class="button-group">
@@ -32,7 +34,7 @@ echo '<script></script>
             }
         echo '</div>';
 
-        echo '<div class="isotope">';
+        echo '<div class="lastworks_isotope_items">';
             foreach($articles as $article) {
                 $images = json_decode($article->images);
                 if( $images->image_intro ){

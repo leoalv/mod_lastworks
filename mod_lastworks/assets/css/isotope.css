@@ -1,7 +1,14 @@
-#filters{
-	padding: 0 10px;
-    top: 0;
-	text-align:center;
+.lastworks_isotope {
+    max-width: 723px;
+    margin: 0 auto;
+    display: block;
+}
+
+.lastworks_isotope #filters{
+    padding: 0 10px;
+    text-align:center;
+    position: relative;
+    margin: 20px 0;
 }
 
 /* ---- button ---- */
@@ -67,7 +74,7 @@
   position: relative;
   float: left;
   width: 221px;
-  height: auto;
+  height: 147px;
   padding: 10px;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;

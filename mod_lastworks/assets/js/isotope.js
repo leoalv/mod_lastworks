@@ -1,6 +1,6 @@
 jQuery( function() {
   
-	var $container = jQuery('.lastworks_isotope .isotope');
+	var $container = jQuery('.lastworks_isotope_items');
 	$container.isotope({
 		itemSelector: '.element-item',
 		layoutMode: 'fitRows'
