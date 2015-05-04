@@ -29,8 +29,8 @@ $jqueryload         = $params->get('vgjquery', 0);
 
 //data
 if( $categories ){
-    $categories     = modLastWorksHelper::getCategoriesLW( $categories );
     $articles       = modLastWorksHelper::getArticlesLW( $categories, $filter, $orderingtype, $ordering, $limit );
+    $categories     = modLastWorksHelper::getCategoriesLW( $categories );
 }else{
     $articles = null;
 }
