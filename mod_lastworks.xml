@@ -2,12 +2,12 @@
 <extension type="module" version="2.5" client="site">
     <name>Last Works</name>
     <author>Valentín García</author>
-    <creationDate>December 2013</creationDate>
-    <copyright>Copyright (C) 2013 Valentín García.</copyright>
+    <creationDate>May 2015</creationDate>
+    <copyright>Copyright (C) 2015 Valentín García.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <authorEmail>htmgarcia@gmail.com</authorEmail>
-    <authorUrl>www.htmgarcia.com</authorUrl>
-    <version>2.3.11</version>
+    <authorUrl>www.joomlatemplat.es</authorUrl>
+    <version>2.4.0</version>
     <description>
         <![CDATA[
         <img src='../modules/mod_lastworks/assets/icon.png' style='float:left; margin-right:10px;width:100px;height:100px;' />
