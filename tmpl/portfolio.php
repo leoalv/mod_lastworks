@@ -52,8 +52,8 @@ echo '<div class="lastworks_isotope ' . $moduleclass_sfx . '">';
         echo '</div>';
         
     }else{// .A1
-    
-        echo '<p class="vg-alert">There are no articles for this module.</p>';
+
+        echo '<div class="lastworks-alert">' . JText::_('MOD_LASTWORKS_NO_ARTICLES_FOUND') . '</div>';
     
     }// .A1 -->
 echo '</div>';

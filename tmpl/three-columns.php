@@ -73,7 +73,7 @@ echo '<div class="lastworks-container lastworks-three-columns">';
         echo '</div>';
         
     }else{
-        echo '<div class="alert alert-block">' . JText::_('MOD_LASTWORKS_NO_ARTICLES_FOUND') . '</div>';
+        echo '<div class="lastworks-alert">' . JText::_('MOD_LASTWORKS_NO_ARTICLES_FOUND') . '</div>';
     }
 
 echo '</div>';

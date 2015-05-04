@@ -71,7 +71,7 @@ class modLastWorksHelper
         $db = JFactory::getDBO();
         $query = 'SELECT * FROM #__categories';
         $query .= ' WHERE published = 1';
-        
+
         //categories
         $query .= ' AND id IN(' . join( ',', $categories ) . ')';
         

@@ -10,10 +10,9 @@
     <version>2.4.0</version>
     <description>
         <![CDATA[
-        <img src='../modules/mod_lastworks/assets/icon.png' style='float:left; margin-right:10px;width:100px;height:100px;' />
-        Last Works. Show your articles as you wants. <br /><br />
+        Last Works. Show your articles as you wants.
         Add your own Alternative Layouts inside: <em>templates/yourtemplate/html/mod_lastworks/</em> and choose it editing the module in <b>Alternative Layout</b> param.  <br />
-        Info and support: <a href="http://htmgarcia.com" target='_blank'>www.htmgarcia.com</a>
+        Info and support: <a href="https://joomlatemplat.es/" target='_blank'>joomlatemplat.es</a>
         ]]>
     </description>
     <files>
