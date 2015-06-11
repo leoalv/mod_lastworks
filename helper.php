@@ -116,7 +116,7 @@ class modLastWorksHelper
     //Get category params @since 1.0.3
     public static function getCategoryParamsLW( $id ){
         
-        $db =& JFactory::getDBO();
+        $db = JFactory::getDBO();
         $query = 'SELECT params FROM #__categories';
         $query .= ' WHERE published = 1';
         
@@ -154,7 +154,7 @@ class modLastWorksHelper
     //Get category note @since 1.0.6
     public static function getCategoryNoteLW( $id ){
         
-        $db =& JFactory::getDBO();
+        $db = JFactory::getDBO();
         $query = 'SELECT note FROM #__categories';
         $query .= ' WHERE published = 1';
         
