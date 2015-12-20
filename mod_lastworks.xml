@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="2.5" client="site">
+<extension type="module" version="2.5" client="site" method="upgrade">
     <name>Last Works</name>
     <author>Valentín García</author>
     <creationDate>May 2015</creationDate>
