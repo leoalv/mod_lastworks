@@ -10,9 +10,7 @@
     <version>2.4.4</version>
     <description>
         <![CDATA[
-        Last Works. Show your articles as you wants.
-        Add your own Alternative Layouts inside: <em>templates/yourtemplate/html/mod_lastworks/</em> and choose it editing the module in <b>Alternative Layout</b> param.  <br />
-        Info and support: <a href="https://joomlatemplat.es/" target='_blank'>joomlatemplat.es</a>
+        Last Works. Show your articles as you wants. Info and support: <a href="https://joomlatemplat.es/" target='_blank'>joomlatemplat.es</a>
         ]]>
     </description>
     <files>
