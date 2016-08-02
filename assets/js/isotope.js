@@ -1,4 +1,4 @@
-jQuery( function() {
+jQuery(window).load(function() {
   
 	var $container = jQuery('.lastworks_isotope_items');
 	$container.isotope({
